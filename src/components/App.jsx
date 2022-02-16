@@ -1,9 +1,10 @@
 import Profile from "./Profile/Profile";
 import dataUser from '../components/Profile/user.json'
-import Statistics from "./Statistics/Statistics";
+// import Statistics from "./Statistics/Statistics";
 import dataStatistics from '../components/Statistics/data.json'
-console.log(Statistics);
-console.log(dataStatistics);
+import StatisticList from './Statistics/StatisticList'
+// console.log(Statistics);
+// console.log(dataStatistics);
 
 export const App = () => {
   return (
@@ -16,10 +17,25 @@ export const App = () => {
   followers={dataUser.stats.followers}
   views={dataUser.stats.views}
   likes={dataUser.stats.likes}
-/>
+      />
+      <StatisticList
+  dataStatistics={dataStatistics}
+      />
     </div>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ReactDOM.render(<Profile
 //   url={dataUser.avatar}

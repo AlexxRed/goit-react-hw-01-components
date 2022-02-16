@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Profile(props) {
   // console.log(props);
   const { url, userName, tag, location, followers, views, likes } = props;
@@ -27,6 +29,16 @@ export default function Profile(props) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  url: PropTypes.string,
+  userName: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+};
 
 //render without props
 
