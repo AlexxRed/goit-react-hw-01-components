@@ -6,25 +6,16 @@ import Statistics from './Statistics';
 export default function StatisticList({ dataStatistics }) {
   // console.log(dataStatistics);
   return (
-    <section class="statistics">
-      <h2 class="title">Upload stats</h2>
-      <ul class="stat-list">
-        {dataStatistics.map(
-          item => (
-            // <li key={item.key}>
-            <Statistics
-              key={item.key}
-              label={item.label}
-              percentage={item.percentage}
-            />
-          )
-          // </li>
-        )}
-      </ul>
-    </section>
+    <ul class="stat-list">
+      {dataStatistics.map(item => (
+        <li key={item.id}>
+          <Statistics label={item.label} percentage={item.percentage} />
+        </li>
+      ))}
+    </ul>
   );
 }
 
 StatisticList.propTypes = {
-  dataStatistics: PropTypes.arrayOf(PropTypes.object),
+  dataStatistics: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

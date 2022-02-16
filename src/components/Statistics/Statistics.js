@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 
-export default function Statistics({ key, label, percentage }) {
+export default function Statistics({ label, percentage }) {
+  // console.log(id);
   return (
-    <li class="item" key={key}>
+    <div>
       <span class="label">{label}</span>
       <span class="percentage">{percentage}%</span>
-    </li>
+    </div>
   );
 }
 
 Statistics.propTypes = {
-  key: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };

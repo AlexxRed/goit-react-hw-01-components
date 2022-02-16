@@ -3,6 +3,7 @@ import dataUser from '../components/Profile/user.json'
 // import Statistics from "./Statistics/Statistics";
 import dataStatistics from '../components/Statistics/data.json'
 import StatisticList from './Statistics/StatisticList'
+import Section from './Section/Section'
 // console.log(Statistics);
 // console.log(dataStatistics);
 
@@ -18,9 +19,10 @@ export const App = () => {
   views={dataUser.stats.views}
   likes={dataUser.stats.likes}
       />
-      <StatisticList
-  dataStatistics={dataStatistics}
-      />
+      <Section title='Upload stats'>
+        <StatisticList dataStatistics={dataStatistics} />
+      </Section>
+      
     </div>
   );
 };
