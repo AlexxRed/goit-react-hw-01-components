@@ -35,14 +35,30 @@ reportWebVitals();
 // console.log(element);
 
 // ReactDOM.render(element, document.querySelector('#root'))
-const elemTitle = <h1>Start</h1>;
-const elemSpan = <span>React</span>;
+// const elemTitle = <h1>Start</h1>;
+// const elemSpan = <span>React</span>;
 
-const JSXelement = (
-  <div>
-    hello react
-    {elemTitle}
-    {elemSpan}
-  </div>
-);
-ReactDOM.render(JSXelement, document.querySelector('#root'));
+// const JSXelement = (
+//   <div>
+//     hello react
+//     {elemTitle}
+//     {elemSpan}
+//   </div>
+// );
+// ReactDOM.render(JSXelement, document.querySelector('#root'));
+
+// =========================================================================
+
+// const dataUser = {
+//   username: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: "Ocho Rios, Jamaica",
+//   avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308
+//   }
+// };
+
+// console.log(dataUser);
