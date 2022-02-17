@@ -1,0 +1,13 @@
+.label {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.percentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 500;
+}

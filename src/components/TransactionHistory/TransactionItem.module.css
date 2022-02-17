@@ -1,0 +1,11 @@
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td {
+  width: 130px;
+  text-align: center;
+  border: 1px solid bisque;
+}
